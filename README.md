@@ -1,2 +1,2 @@
-# freecodecamp
-A documented journey of coding &amp; learning using the Free Code Camp platform
+# Free Code Camp
+A documented journey of coding &amp; learning different technologies using the Free Code Camp platform
