@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <h1 id="title">freeCodeCamp Survey Form</h1>
+  <p id="description">Thank you for taking the time to help us improve the platform</p>
+  <form action="" id="survey-form">
+    <label id="name-label">Enter your name: <input type="text" id="name" placeholder="Your name..." required></label>
+    <label id="email-label">Enter your email: <input type="email" id="email" placeholder="Your email address..." required></label>
+    <label id="number-label">Enter a number: <input type="number" id="number" min="1" max="10" placeholder="1-10"></label>
+    <label>Are you a Yes/No person:
+      <select id="dropdown">
+        <option value="yes">Yes</option>
+        <option value="no">No</option>
+      </select>
+    </label>
+    <label><input type="radio" name="coffee-type" value="regular">Regular Coffee</label>
+    <label><input type="radio" name="coffee-type" value="decaf">Decaf Coffee</label>
+    <label>Burger condiments:
+      <input type="checkbox" value="ketchup">Kethcup
+      <input type="checkbox" value="mustard">Mustard
+      <input type="checkbox" value="fries">Fries
+      <input type="checkbox" value="fries-side">Fries on the side
+      <input type="checkbox" value="onion-rings">Onion rings
+    </label>
+    <label>Let us know how we can serve you better:
+      <textarea name="comments" cols="30" rows="10"></textarea>
+    </label>
+    <input type="submit" id="submit" value="Submit">
+  </form>
+</body>
+</html>
