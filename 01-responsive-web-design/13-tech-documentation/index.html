@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="styles.css">
+  <title>Python Technical Documentation</title>
+</head>
+<body>
+  <nav id="navbar">
+    <header>Python Documentation</header>
+    <ul>
+      <li><a class="nav-link" href="#Introduction">Introduction</a></li>
+      <li><a class="nav-link" href="#What_is_it_used_for">What is it used for</a></li>
+      <li><a class="nav-link" href="#Major_features">Major features</a></li>
+      <li><a class="nav-link" href="#Python_popularity">Python popularity</a></li>
+      <li><a class="nav-link" href="#Python_history">Python history</a></li>
+      <li><a class="nav-link" href="#Python_2_vs_Python_3">Python 2 vs Python 3</a></li>
+    </ul>
+  </nav>
+  <main id="main-doc">
+    <section class="main-section" id="Introduction">
+      <header>Introduction</header>
+      <article>
+        <p> Python is a computer programming language. Or, in other words, a vocabulary and set of grammatical rules for instructing a computer to perform tasks. Its original creator, Guido van Rossum, named it after the BBC television show ‘Monty Python’s Flying Circus.’ Hence, you’ll find that Python books, code examples, and documentation sometimes contain references to this television show.</p>
+
+        <p>Python is considered to be easy to learn, and it’s designed around a set of clearly defined principles (the <a href="https://python.land/the-zen-of-python" target="_blank">Zen of Python</a>) that encourage the Python core developers to make a language that is unambiguous and easy to use</p>
+      </article>
+    </section>
+
+    <section class="main-section" id="What_is_it_used_for">
+      <header>What is it used for</header>
+      <article>
+        <p>You can use Python to automate tasks, perform calculations, create user interfaces, create website backends, access databases, download information from the Internet, etc. It’s a versatile language that is easy to learn and write, and although perfect for beginning programmers, is just as useful and powerful for seasoned professionals.</p>
+
+        <p>Python is extremely popular in a quickly growing field of expertise called data science. Many data scientists use Python for their day-to-day work. And these are just a few examples. If you start looking closely, Python is very ubiquitous.</p>
+      </article>
+    </section>
+
+    <section class="main-section" id="Major_features">
+      <header>Major features</header>
+      <article>
+        <p><strong>It's easy to read and write</strong></p>
+        <p>One of Python’s most notable features is the way it enforces the use of indentation for readability.</p>
+        <code>
+          def bigger_than_five(x):
+            # The contents of a function are indented
+            if x > 5:
+              # This is another, even more indented block of code
+              print("X is bigger than five")
+            else:
+              # And one more!
+              print("x is 5 or smaller")
+        </code>
+        <p>Without proper indentation, your code won’t even run. In Python, we need to indent all code blocks to the same level.</p>
+
+        <p><strong>You don’t need to manually compile your program</strong></p>
+        <p>When you create a Python program, you can run it directly without a manual compilation step. This is the case with all <em>interpreted languages</em>, and that’s why most people will tell you it is an interpreted language. However, internally Python compiles your code into lower-level code, called <em>bytecode</em>.</p>
+
+        <p><strong>Dynamically typed</strong></p>
+        <p>Python dynamically finds or figures out the data type of a variable; to demonstrate:</p>
+        <code>
+          my_name = "Erik"
+          my_age = 37
+          my_salary = 1250.70
+
+          my_income = my_salary * 12
+        </code>
+        <p>Running the program, Python will look at the variable <strong><em>my_salary</em></strong>, see that it is a <em>floating-point</em> value, and perform the math. If <strong><em>my_salary</em></strong> would have been a <em>string</em>, Python wouldn’t complain though. It would detect it’s a string and just create a new one, consisting of 12 repetitions of that string.</p>
+      </article>
+    </section>
+
+    <section class="main-section" id="Python_popularity">
+      <header>Python popularity</header>
+      <article>
+        <p>Python comes in second place on a <a href="https://redmonk.com/sogrady/2021/03/01/language-rankings-1-21/" target="_blank">well-known list of popular programming languages</a> since January 2021.</p>
+
+        <p>Python’s popularity is a great advantage. There are vast amounts of tutorials, books, courses, sample code, and help available. Python is here to stay so if you want to learn Python: it’s a safe bet! In fact, Python jobs are generally raking high on the pay scale.</p>
+      </article>
+    </section>
+
+    <section class="main-section" id="Python_history">
+      <header>Python history</header>
+      <article>
+        <p>In 1987, <strong>Guido van Rossum</strong> worked on a big distributed operating system at the <a href="https://www.cwi.nl/about" target="_blank">CWI</a>, a national research institute for mathematics and computer science in the Netherlands. Within that project, he had some freedom to work on side projects. Armed with the knowledge and experience he had built up in the years before, working on a computer language called <strong>ABC</strong>, he started writing the <strong>Python</strong> programming language.</p>
+
+        <p><strong>Timeline</strong></p>
+        <ul>
+          <li>1991 = Python 0.9</li>
+          <li>1994 = Python 1.0</li>
+          <li>2000 = Python 2.0</li>
+          <li>2008 = Python 3.0</li>
+          <li>2020 = Python 2.0 end of life</li>
+        </ul>
+      </article>
+    </section>
+
+    <section class="main-section" id="Python_2_vs_Python_3">
+      <header>Python 2 vs Python 3</header>
+      <article>
+        <p>Python 2 and 3 have been developed and maintained side by side for an extended period. The primary reason is that Python 3 code is <em>not entirely backward compatible</em> with Python 2 code.</p>
+
+        <p><em>Python 2 Integer Division:</em></p>
+        <code>>>> 4/3
+          1</code>
+
+        <p><em>Python 3 Integer Division:</em></p>
+        <code>>>> 4/3
+          1.3333333333333333</code>
+
+        <p><em>Python 2 range() function:</em></p>
+        <code>>>>range(5)
+              [0, 1, 2, 3, 4]</code>
+
+        <p><em>Python 3 range() function:</em></p>
+        <code>>>>range(5)
+              range(0, 5)</code>
+
+        <p>This incompatibility caused a prolonged adoption rate. Many people were happy with version 2 and didn’t see much reason to upgrade. On top of that, Python 3 was <em>initially slower</em> than Python 2. As Python 3 kept improving and receiving new features, eventually, it started to take off.</p>
+      </article>
+    </section>
+  </main>
+</body>
+</html>
