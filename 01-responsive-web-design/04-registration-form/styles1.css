@@ -1,0 +1,18 @@
+body {
+  font-family: Arial, sans-serif;
+  font-size: 1rem;
+  font-weight: 200;
+  line-height: 1.1;
+  margin: 0;
+  text-align: center;
+}
+
+.container {
+  width: 100%;
+  margin: auto;
+}
+
+.form-group {
+  margin: 0 auto 1.25rem auto;
+  padding: 0.20rem;
+}

@@ -7,6 +7,7 @@ body {
   font-size: 1.6rem;
   line-height: 1.5;
   text-align: center;
+  background-color: #282C34;
   color: #333;
   margin: 0;
 }
@@ -61,7 +62,6 @@ blockquote {
 }
 
 #img-div {
-  background: white;
   padding: 10px;
   margin: 0;
 }
@@ -73,6 +73,18 @@ blockquote {
 #headline {
   margin: 50px 0;
   text-align: center;
+}
+
+.os-version {
+  color: #E05848;
+}
+
+.quote-highlight {
+  color: #745739;
+}
+
+.release-date {
+  color: #2D9538;
 }
 
 /* Media Queries */

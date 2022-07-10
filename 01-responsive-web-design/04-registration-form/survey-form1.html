@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
+  <link rel="stylesheet" href="styles1.css">
+</head>
+<body>
+  <div class="container">
+    <header>
+      <h1 id="title">freeCodeCamp Survey Form</h1>
+      <p id="description">Thank you for taking the time to help us improve the platform</p>
+    </header>
+
+    <form id="survey-form" action="">
+      <div class="form-group">
+        <label id="name-label">Name: <input id="name" type="text" placeholder="Enter your name..." required></label>
+      </div>
+
+      <div class="form-group">
+        <label id="email-label">Email: <input id="email" type="email" placeholder="Enter your email..." required></label>
+      </div>
+
+      <div class="form-group">
+        <label id="number-label">Choose a number: <input id="number" type="number" min="1" Max="10" placeholder="1..10"></label>
+      </div>
+
+      <div class="form-group">
+        <label>Are you Human:
+          <select id="dropdown">
+            <option value="yes">Yes</option>
+            <option value="no">No</option>
+          </select>
+        </label>
+      </div>
+
+      <div class="form-group">
+        Preferred Coffee:
+        <label><input type="radio" name="coffee-type" value="regular-coffee"> Regular</label>
+        <label><input type="radio" name="coffee-type" value="decaf-coffee"> Decaffinated</label>
+      </div>
+
+      <div class="form-group">
+        <label>Preferred Burger Condiments:
+          <input type="checkbox" value="ketchup">Kethcup
+          <input type="checkbox" value="mustard">Mustard
+          <input type="checkbox" value="fries">Fries
+          <input type="checkbox" value="onion-rings">Onion Rings
+          <input type="checkbox" value="onions">Onions
+        </label>
+      </div>
+
+      <div class="form-group">
+        <p>How can we serve you better:</p>
+        <label>
+          <textarea name="comments" rows="10" cols="30"></textarea>
+        </label>
+      </div>
+
+      <div class="form-group">
+        <button type="submit" id="submit" class="submit-button">Submit</button>
+      </div>
+    </form>
+  </div>
+</body>
+</html>
