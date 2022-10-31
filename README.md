@@ -1,5 +1,5 @@
 # Free Code Camp
-A documented journey of coding &amp; learning different technologies using the Free Code Camp platform
+A documented journey re-learning web development using the freeCodeCamp platform
 
 
 ## Progress
