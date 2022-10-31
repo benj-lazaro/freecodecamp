@@ -1,4 +1,4 @@
-# Free Code Camp
+# freeCodeCamp Web Development
 A documented journey re-learning web development using the freeCodeCamp platform
 
 
