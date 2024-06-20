@@ -4,4 +4,4 @@ A documented relearning journey in web development using the freeCodeCamp platfo
 
 ## Progress
 
-Progress chart ()
+Progress chart (https://www.freecodecamp.org/benj-lazaro)

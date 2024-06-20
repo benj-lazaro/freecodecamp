@@ -1,0 +1,3 @@
+// Pyramid Generator
+
+let character;
