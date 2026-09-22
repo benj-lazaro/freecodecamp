@@ -1,6 +1,6 @@
-# freeCodeCamp Curriculum
+# freeCodeCamp Workshop Code
 
-A repository of workshop code of selected freeCodeCamp curriculum
+Workshop repository of chosen freeCodeCamp curriculum
 
 ## Progress Chart
 
