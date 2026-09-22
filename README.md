@@ -1,6 +1,6 @@
 # freeCodeCamp Lab & Workshop
 
-Lab & Workshop repository of selected curriculum
+Selected curricilum's Lab & Workshop repository
 
 ## Progress Chart
 
