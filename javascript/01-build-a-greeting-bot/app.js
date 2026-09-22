@@ -14,3 +14,6 @@ const botLocationSentence = "I live in " + botLocation + ".";
 console.log(botLocationSentence);
 
 bot = "professorBot";
+
+const nicknameIntroduction = "My nickname is " + bot + ".";
+console.log(nicknameIntroduction);
