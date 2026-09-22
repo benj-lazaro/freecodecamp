@@ -1,4 +1,4 @@
-# freeCodeCamp Workshop Code
+# freeCodeCamp Workshop
 
 Workshop repository of chosen freeCodeCamp curriculum
 
