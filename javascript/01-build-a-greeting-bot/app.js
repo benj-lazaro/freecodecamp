@@ -25,3 +25,7 @@ const newNicknameGreeting =
 console.log(newNicknameGreeting);
 
 const favoriteSubject = "Computer Science";
+
+const favoriteSubjectSentence =
+  "My favorite subject is " + favoriteSubject + ".";
+console.log(favoriteSubjectSentence);
