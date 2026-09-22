@@ -1,7 +1,7 @@
-# freeCodeCamp Web Development
+# freeCodeCamp Curriculum
 
-A documented relearning journey in web development using the freeCodeCamp platform
+A repository of workshop code of selected freeCodeCamp curriculum
 
-## Progress
+## Progress Chart
 
-Progress chart (https://www.freecodecamp.org/benj-lazaro)
+freeCodeCamp Profile (https://www.freecodecamp.org/benj-lazaro)
