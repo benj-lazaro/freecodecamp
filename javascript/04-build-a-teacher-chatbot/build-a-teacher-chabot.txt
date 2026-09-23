@@ -1,0 +1,5 @@
+Build A Teacher Chatbot
+-----------------------
+- In this workshop
+    - You are going to continue learning about strings 
+    - By building a Teacher Chatbot
