@@ -1,0 +1,3 @@
+Build A String Formatter
+------------------------
+- In this workshop, you will practice working with various string methods used for formatting strings
