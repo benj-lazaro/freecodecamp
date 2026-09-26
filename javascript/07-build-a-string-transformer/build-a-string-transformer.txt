@@ -1,0 +1,6 @@
+Build A String Transformer
+--------------------------
+- In this workshop, you will practice working w/ the methods by building a string transformer app
+    - replace()
+    - replaceAll()
+    - repeat()
