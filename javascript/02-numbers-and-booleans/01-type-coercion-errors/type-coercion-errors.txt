@@ -1,0 +1,27 @@
+Debug Type Coercion Errors In A Buggy App
+-----------------------------------------
+- Fulfill the user stories below and get all the tests to pass to complete the lab
+
+
+- User Stories:
+    - You should have a variable named "firstResult" that 
+        - Correctly adds the numbers 5 and 10 to produce the value 15
+
+    - You should have a variable named "secondResult" that 
+        - Correctly subtracts 5 from 8 to produce the value 3
+
+    - You should have a variable named "thirdResult" that 
+        - Produces the value 6 by adding two numbers
+        - Replace the boolean currently used in the expression with a number
+
+    - You should have a variable named "fourthResult" that 
+        - Produces the value 8 by adding two numbers
+        - Replace the boolean currently used in the expression with a number
+
+    - You should have a variable named "fifthResult" that 
+        - Correctly multiplies two numbers to get the product 20
+        - Replace the string currently used in the expression with a number
+
+    - You should have a variable named "sixthResult" that 
+        - Correctly adds two numbers to produce the value 22
+        - Replace the null currently used in the expression with a number
