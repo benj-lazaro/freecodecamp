@@ -1,0 +1,3 @@
+Build A Logic Checker App
+-------------------------
+- In this workshop, you'll learn how to work with conditional statements & comparison operators
