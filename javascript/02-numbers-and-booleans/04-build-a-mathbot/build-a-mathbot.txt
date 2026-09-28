@@ -1,0 +1,7 @@
+Build A Mathbot
+---------------
+- In this workshop
+    - You will review working with the different Math object methods by building a Mathbot
+    
+    - This Mathbot will log some math operations & messages 
+        - To the console in efforts to teach you about JavaScript's Math object
