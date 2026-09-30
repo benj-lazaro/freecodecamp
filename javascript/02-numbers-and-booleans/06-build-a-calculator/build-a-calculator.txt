@@ -1,0 +1,4 @@
+Build A Calculator
+------------------
+- In this workshop
+    - You will review how to work with functions by building a calculator app
