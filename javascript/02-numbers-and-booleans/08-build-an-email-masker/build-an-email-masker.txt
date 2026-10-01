@@ -1,0 +1,30 @@
+Build An Email Masker
+---------------------
+- In this lab
+    - You will mask the username part of an email address with asterisks
+
+    - Masking is a term used to hide or replace sensitive information w/ 
+        - Asterisks or other characters
+
+    
+- User Stories:
+    - Create a function named "maskEmail" that 
+        - Takes email as an argument
+
+    - Inside the function
+        - You should mask the email and append the domain name to it
+        
+        - Remember that you can use methods like 
+            - "slice", "repeat", "indexOf" or even replace to help you
+
+    - Outside the function
+        - Declare a variable named "email" 
+            - To store the email address you want to mask
+
+    - Call the "maskEmail" function w/ the email variable
+        - Output the result to the console
+
+        maskEmail("apple.pie@example.com") should return "a*******e@example.com"
+        maskEmail("freecodecamp@example.com") should return "f**********p@example.com"
+        maskEmail("info@test.dev") should return "i**o@test.dev"
+        maskEmail("user@domain.org") should return "u**r@domain.org"
