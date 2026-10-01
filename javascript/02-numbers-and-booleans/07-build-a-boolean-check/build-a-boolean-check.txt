@@ -1,0 +1,15 @@
+Build A Boolean Check Function
+------------------------------
+- In this lab
+    - You will build a function that checks if a value is classified as a boolean primitive
+
+
+- User Stories:
+    - You should have a function called booWho that receives one argument
+    
+    - If the argument received is a boolean primitive
+        - The function should return true
+
+    - If the argument is any other value
+        - The function should return false
+
