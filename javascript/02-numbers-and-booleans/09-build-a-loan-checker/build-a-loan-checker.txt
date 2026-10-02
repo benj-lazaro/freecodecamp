@@ -1,0 +1,4 @@
+Build A Loan Qualification Checker
+----------------------------------
+- In this workshop
+    - You'll review JavaScript conditionals by building a loan qualification checker app
