@@ -1,0 +1,17 @@
+Build A Celsius To Fahrenheit Converter
+---------------------------------------
+- In this lab
+    - You will write a function that converts the temperature from Celsius to Fahrenheit
+    
+    - The formula to convert from Celsius to Fahrenheit is:
+
+        fahrenheit = celsius * (9/5) + 32
+
+
+- User Stories:
+    - You should create a function named convertCtoF
+
+    - convertCtoF should take a single numeric argument
+        - Which is the temperature in Celsius
+        
+    - convertCtoF should return a number
