@@ -1,0 +1,18 @@
+Implement The Truncate String Algorithm
+---------------------------------------
+- In this lab
+    - You will practice truncating a string to a certain length
+
+
+- User Stories:
+    - You should have a function truncateString that 
+        - Accepts two arguments, the first one a string, the second one a number
+
+    - If the length of the string is more than the given number
+        - The string should be truncated to reduce the length so that 
+            - It is equal the given number, and 
+            - Should be appended at the end of the truncated string
+
+    - If the length of the string is equal to or lower than the given number
+        - The string should be returned unchanged
+
