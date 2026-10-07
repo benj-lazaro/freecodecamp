@@ -1,0 +1,17 @@
+Build A Confirm The Ending Tool
+-------------------------------
+- In this lab
+    - You will implement a function that checks if a string ends with the given target string
+
+
+- User Stories:
+    - You should create a function named "confirmEnding" that 
+        - Takes two parameters: the string to check & the string to check against
+
+    - The function should return "true" 
+        - If the first string ends with the second string
+        - Return "false" otherwise
+
+    - You should not use the ".endsWith()" method
+        - Instead, use one of the JavaScript substring methods to achieve this
+
