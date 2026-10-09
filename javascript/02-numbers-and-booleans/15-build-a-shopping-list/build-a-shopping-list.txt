@@ -1,0 +1,5 @@
+Build A Shopping List
+---------------------
+- In this workshop
+    - You will continue to learn about arrays by building a grocery shopping list
+
