@@ -1,0 +1,90 @@
+Build A Lunch Picker Program
+----------------------------
+- In this lab
+    - You'll build a program that helps in managing lunch options
+    
+    - You'll work with an array of lunches
+        - Add & remove items from the array
+        - Randomly select a lunch option
+
+
+User Stories:
+    - You should create a lunches variable 
+        - Assign it an empty array that will be used to store lunch items
+
+    - You should create a function "addLunchToEnd" that 
+        - Takes an array as the first argument and a string as the second argument
+        
+        - The function should:
+            - Add the string to the end of the array
+
+            - Log the string "[Lunch Item] added to the end of the lunch menu." to the console
+                - Where [Lunch Item] is the string passed to the function
+            
+            - Return the updated array
+
+    - You should create a function "addLunchToStart" that 
+        - Takes an array as the first argument and a string as the second argument
+        
+        - The function should:
+            - Add the string to the start of the array
+            
+            - Log the string "[Lunch Item] added to the start of the lunch menu." to the console
+                - Where [Lunch Item] is the string passed to the function
+
+        - Return the updated array
+
+    - You should create a function remove"LastLunch that 
+        - Takes an array as its argument
+        
+        - The function should:
+            - Remove the last element from the array
+
+            - If the removal is successful
+                - Log the string "[Lunch Item] removed from the end of the lunch menu." to the console
+                    - Where [Lunch Item] is the element removed from the array
+
+            - If the array is empty
+                - Log the string "No lunches to remove." to the console
+
+        - Return the updated array
+
+    - You should create a function "removeFirstLunch" that 
+        - Takes an array as its argument
+        
+        The function should:
+            - Remove the first element from the array
+
+            - If the removal is successful
+                - Log the string "[Lunch Item] removed from the start of the lunch menu." to the console
+                    - Where [Lunch Item] is the element removed from the array
+
+
+            - If the array is empty
+                - Log the string "No lunches to remove." to the console
+
+        - Return the updated array
+
+    - You should create a function "getRandomLunch" that 
+        - Takes an array as its argument
+        
+        - The function should:
+            - Select a random element from the array
+
+            - If successful
+                - Log the string "Randomly selected lunch: [Lunch Item]" to the console
+                    - Where [Lunch Item] is a random element in the array
+
+            - If the array is empty
+                - Log the string "No lunches available." to the console
+
+
+    - You should create a function "showLunchMenu" that 
+        - Takes an array as its argument and:
+
+        - If there are elements in the array
+            - Logs the string "Menu items: [Lunch Item], [Lunch Item]..." to the console
+                - Where each [Lunch item] is one of the elements in the array, in order
+
+        - If the array is empty
+            - Logs the string "The menu is empty." to the console
