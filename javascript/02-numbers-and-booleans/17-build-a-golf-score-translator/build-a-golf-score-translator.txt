@@ -1,0 +1,34 @@
+Build A Golf Score Translator
+-----------------------------
+- In this lab
+    - You will write a function that converts the par and strokes to their nickname
+
+
+- User Stories:
+    - You should create a function named "golfScore"
+
+    - Function "golfScore" should take two numeric arguments
+        - Which are the par for the course and the amount of strokes made
+    
+    - Function "golfScore" should return a string
+
+    - Function "golfScore" return "Hole-in-one!" 
+        - If strokes is 1
+
+    - Function "golfScore" return "Eagle" 
+        - If strokes is less than or equal to par minus 2
+
+    - Function "golfScore" should return "Birdie" 
+        - If strokes is equal to par minus 1
+
+    - Function "golfScore" should return "Par" 
+        - If strokes is equal to par
+
+    - Function "golfScore" should return "Bogey" 
+        - If strokes is equal to par plus 1
+
+    - Function "golfScore" should return "Double Bogey" 
+        - If strokes is equal to par plus 2
+
+    - Function "golfScore" should return "Go Home!" 
+        - If strokes is greater than or equal to par plus 3
