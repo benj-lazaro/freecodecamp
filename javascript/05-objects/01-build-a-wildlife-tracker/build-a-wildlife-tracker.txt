@@ -1,0 +1,4 @@
+Build A Wildlife Tracker
+------------------------
+- In this workshop
+    - You will build a simple Wildlife Tracker using JavaScript objects
