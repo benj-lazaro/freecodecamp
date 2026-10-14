@@ -1,0 +1,49 @@
+Build A Cargo Manifest Validator
+--------------------------------
+- In this lab
+    - You will use JavaScript to normalize and validate cargo manifests
+
+
+- User Stories:
+    - You should implement a function named "normalizeUnits" with a "manifest" parameter
+        - The function must not mutate the original manifest object & must always return a new object 
+            - Where weight is normalized to kilograms and unit is set to "kg"
+
+        - If the weight of the manifest object is expressed in pounds (unit: "lb")
+            - The function should convert the weight to kilograms using 
+            - The approximate conversion 1 lb = 0.45 kg, and update the unit accordingly
+
+        - If the weight is already expressed in kilograms (unit: "kg")
+            - The weight and unit should remain unchanged
+    
+    - You should implement a function named "validateManifest" with a "manifest" parameter
+        - The function must not mutate the original manifest object and must always return a new object
+
+        - If the input manifest is valid (no missing or invalid properties)
+            - The function should return an empty object
+
+        - If the input manifest is not valid
+            - The function should return an object containing entries for each missing or invalid property
+            - Missing properties should have the value "Missing" and invalid properties should have the value "Invalid"
+
+            - Example return value where the input object is missing the destination property and has an invalid weight property:
+
+                {
+                    destination: "Missing",
+                    weight: "Invalid"
+                }
+
+    - You should implement a function named "processManifest" with a "manifest" parameter. 
+    
+        - The function should log:
+            - If the manifest object is valid, "Validation success: ${containerId}" and 
+                - Then the manifest's "weight" in kilograms, in the form "Total weight: ${weight} kg"
+                - Use "normalizeUnits()" for this conversion
+
+            - If the manifest object is not valid, "Validation error: ${containerId}" and 
+                - Then the object returned by calling "validateManifest()" with the manifest object
+                
+        - Note: Each of these two cases should have two "console.log()" calls
+
+    - Note: Do not declare "normalizeUnits", "validateManifest", or "processManifest" 
+        - Using "const", since the tests need to reassign them
