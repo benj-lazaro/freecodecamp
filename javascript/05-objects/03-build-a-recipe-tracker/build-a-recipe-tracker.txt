@@ -1,0 +1,5 @@
+Build A Recipe Tracker
+----------------------
+- In this lab
+    - You will create a recipe tracker using JavaScript objects
+
