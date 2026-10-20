@@ -1,0 +1,6 @@
+Build A Word Counter
+--------------------
+- In this workshop
+    - You will practice using for...of loops by building a function that 
+        - Counts how often a string appears in an array of strings
+
