@@ -1,0 +1,7 @@
+Build A Sentence Analyzer
+-------------------------
+- In this workshop
+    - you will build a sentence analyzer that 
+        - Will take a sentence 
+        - Get the count for the number of words, vowels, consonants, and punctuation marks
+
