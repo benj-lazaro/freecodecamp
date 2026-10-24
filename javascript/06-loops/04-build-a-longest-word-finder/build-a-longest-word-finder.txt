@@ -1,0 +1,12 @@
+Build A Longest Word Finder
+---------------------------
+- In this lab
+    - You will build a function that 
+        - Returns the length of the longest word in the provided sentence
+
+
+- User Stories:
+    - You should create a function named "findLongestWordLength" that 
+        - Takes a string as an argument
+    
+    - The function should return the length of the longest word in the string
