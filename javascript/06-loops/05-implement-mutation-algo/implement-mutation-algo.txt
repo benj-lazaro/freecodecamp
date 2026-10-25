@@ -1,0 +1,28 @@
+Implement The Mutations Algorithm
+---------------------------------
+- In this lab
+    - Fulfill the user stories below
+
+
+- User Stories:
+    - Create a function named "mutation" that 
+        - Takes an array as its argument
+
+    - "mutation" should return "true" 
+        - If the string in the first element of the array 
+            - Contains all of the letters of the string in the second element of the array
+        
+        - Otherwise, return "false"
+            
+        - For example:
+            - mutation(["hello", "Hello"])
+                - Should return "true" because all of the letters in the second string are present
+                    - in the first, ignoring case
+
+            - mutation(["hello", "hey"]) 
+                - Should return "false" 
+                - Because the string hello does not contain a "y"
+
+            - mutation(["Alien", "line"])
+                - Should return "true" 
+                - Because all of the letters in line are present in "Alien"
