@@ -1,0 +1,5 @@
+Build A Space Mission Roster
+----------------------------
+- In this workshop
+    - You will leverage JavaScript to build a roster of astronauts for a space mission
+
