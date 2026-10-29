@@ -1,0 +1,14 @@
+Implement The Chunky Monkey Algorithm
+-------------------------------------
+- In this lab
+    - Fulfill the user stories below
+
+
+- User Stories
+    - Write a function named "chunkArrayInGroups" that 
+        - Takes an array as first argument and a number as second argument
+        
+        - The function should split the array into smaller arrays of length equal 
+            - To the second argument 
+            - Returns them as a two-dimensional array
+
