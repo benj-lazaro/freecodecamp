@@ -1,0 +1,73 @@
+Build A Device Loan Ledger
+--------------------------
+- In this lab
+    - Fulfill the user stories below
+
+
+- User Stories:
+    - You should model the ledger as an object where each device is keyed by its asset tag &
+        - Has "type", "status", "borrower" (with name and email), and "dueDate" properties
+
+    - You should implement a "checkoutDevice(ledger, assetTag, borrower)" function that 
+        - Takes a ledger object
+        
+        - Clones it with "serializeLedger" and "loadLedger", without mutating the original
+
+        - On the clone, it should set the "borrower" object's "name" and "email"
+            - Update the status to "CheckedOut"
+
+            - Return an object of the form 
+            
+                { ledger: updatedLedger, message: confirmationString }
+                
+            - Where the "message" includes the asset tag and the "borrower" object's "name"
+
+            - If "assetTag" does not exist in the ledger
+                - The function should return the ledger unchanged along with a "message" that 
+                    - Includes the asset tag and explains that it was not found
+
+            - If the device is already "CheckedOut"
+                - The function should return the ledger unchanged 
+
+                - Leave the current borrower in place
+                    - Along with a "message" that includes the asset tag and explains that 
+                    - The device is already checked out
+
+    - You should implement a "checkinDevice(ledger, assetTag) function" that 
+        - Takes a ledger object 
+        
+        - Clones it with "serializeLedger" and "loadLedger", without mutating the original
+        
+        - On the clone
+            - It should clear the borrower object's name and email
+                - Reset dueDate to ""
+                - Update the status to "CheckedIn"
+            
+            - Return an object of the form 
+                
+                    { ledger: updatedLedger, message: confirmationString }
+                    
+            - Where the message includes the asset tag
+
+            - If "assetTag" does not exist in the ledger
+                - The function should return the ledger unchanged along with a message that 
+                    - Includes the asset tag and explains that it was not found
+
+        - You should implement a "listOverdueDevices(ledger, today)" function that 
+            - Takes a ledger object and returns an array of the device objects that are overdue
+                - Sorted by "dueDate" in ascending order 
+                
+            - A device is overdue when its status is "CheckedOut" and its "dueDate" is 
+                - Strictly before "today"
+            
+            - Both "today" and "dueDate" are strings in month/day/year order
+                - The month and day may or may not be zero-padded
+                - (for example, "9/5/2025" and "09/05/2025" are both valid).
+
+        - You should not use the JavaScript Date object anywhere in your code
+
+        - You should implement a "serializeLedger(ledger)" function that 
+            - Converts the ledger object into a JSON string
+            
+            - A "loadLedger(json) function" that 
+                - Converts a JSON string back into a JavaScript object
