@@ -1,0 +1,16 @@
+Build A Heritage Library Catalog
+--------------------------------
+- In this workshop
+    - You will build a heritage library catalog system
+
+    - You will parse raw book data, search and group entries
+        - Validate data quality, and export results to different formats
+
+    - Each catalog card is stored as a single string in the format 
+        
+            "Title | Author | Year | Location"
+        
+        - With fields separated by the pipe character (|)
+
+    - You will use an array of these strings throughout the workshop 
+        - To build and test your catalog functions
