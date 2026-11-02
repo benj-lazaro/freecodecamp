@@ -1,0 +1,56 @@
+Build A Smart Pantry Restocker
+------------------------------
+- In this lab
+    - you will build a small pantry management program 
+        - Using basic JavaScript concepts like arrays, objects, loops, and conditionals
+
+
+- User Stories:
+    - You should implement a "parseShipment(rawData)" function that 
+        - Takes an array of strings
+            - Returns an array of objects with { sku, name, qty, expires, zone } properties
+
+        - Duplicate "sku" values in the shipment should be ignored
+        
+        - When the "zone" segment is not provided
+            - It should default to "general"
+
+        - The "qty" value should be converted to a number
+
+    - You should implement a "planRestock(pantry, shipment)" function that 
+        - Compares the current pantry with the incoming shipment
+            - Returns an array of actions in the form 
+            
+                { type, item }
+            
+            - Where type is one of "restock", "discard", or "donate", and item is the parsed shipment object
+
+        - The "pantry" parameter is an array of objects with 
+            - The same shape as a parsed shipment item ({ sku, name, qty, expires, zone })
+
+            - If a shipment item has a "qty" of 0 or less
+                - The action type should be "discard", regardless of whether the item exists in the pantry
+
+            - Otherwise, if the shipment item's "sku" already exists in the pantry
+                - The action "type" should be "restock"
+
+            - Otherwise (the shipment item's sku does not exist in the pantry)
+                - The action "type" should be "donate"
+
+    - You should implement a "groupByZone(actions) "function that 
+        - Groups the actions into storage zones based on each item's "zone" property
+        
+        - The function should return an object 
+            - Where each key is a zone name and the value is an array of actions belonging to that zone
+            
+            - For example, if actions contain items with zones "fridge" and "pantry"
+                - The result should be { fridge: [...], pantry: [...] }
+
+    - You should implement a "clonePantry(pantry) "function that 
+        - Returns a deep copy of the pantry so planning changes do not affect the original list
+            - A deep copy means creating a new array with new objects
+                - So modifying the copy does not change the original pantry
+    
+    - You should use all of the functions together to process a shipment 
+        - Log the final grouped result object to the console
+    
