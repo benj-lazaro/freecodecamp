@@ -46,9 +46,6 @@ function parseShipment(rawData) {
   return shipment;
 }
 
-const shipment = parseShipment(rawData);
-console.log(shipment);
-
 function planRestock(pantry, shipment) {
   let type = "";
   const actions = [];
@@ -68,21 +65,26 @@ function planRestock(pantry, shipment) {
   return actions;
 }
 
-const actions = planRestock(pantry, shipment);
-console.log(actions);
-
 function groupByZone(actions) {
-  const actionType = [];
+  return actions.reduce((grouped, action) => {
+    const zone = action.item.zone || "general";
 
-  for (const action of actions) {
-    if (actions.map((action) => action.item.zone).includes(action.item.zone)) {
-      actionType.push(action.type);
-      console.log(action.item.zone, actionType);
+    if (!grouped[zone]) {
+      grouped[zone] = [];
     }
 
-    // console.log(`${action.item.zone}: [${action.type}]`);
-  }
-  console.log(actionType);
+    grouped[zone].push(action);
+
+    return grouped;
+  }, {});
 }
 
-groupByZone(actions);
+function clonePantry(pantry) {
+  return structuredClone(pantry);
+}
+
+const shipment = parseShipment(rawData);
+const pantryClone = clonePantry(pantry);
+const actions = planRestock(pantry, shipment);
+const grouped = groupByZone(actions);
+console.log(grouped);
