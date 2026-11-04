@@ -1,0 +1,5 @@
+Build A Festival Crowd Flow Simulator
+-------------------------------------
+- In this lab
+    - You will use JavaScript to simulate the flow of attendees at a music festival
+    
