@@ -68,4 +68,8 @@ function printSummary(summary) {
   }
 }
 
-function simulateFestival(gates, timeBlock) {}
+function simulateFestival(gates, timeBlock) {
+  console.log("\n" + timeBlock + " Simulation");
+
+  const throughputSummary = initializeThroughput(gates);
+}
