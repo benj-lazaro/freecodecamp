@@ -1,0 +1,29 @@
+Build a Traffic Light Sequencer
+-------------------------------
+- In this lab
+    -  You will simulate configurable traffic light cycles and log anomalies
+
+
+- User Stories:
+    - You should have a function named "runSequence" 
+        - With two parameters: config and cycles where
+            - "config" represents a config object and 
+            - "cycles" represents the maximum number of times the sequence can run before stopping
+
+    - You should implement "runSequence(config, cycles)" 
+        - Using a "for" or "while" loop 
+        - To iterate through each phase across the given number of cycles
+
+    - The "runSequence" function should:
+        - Log "No phases found" 
+            - Immediately return if "config.phases" is empty
+
+        - Log "Faulted phase!" 
+            - Stop the simulation early if "config.fault" is set to true
+
+        - Log "Invalid phase detected" if duration <= 0
+
+        - Log "Switching to [color] for [duration] s" for each valid phase
+            - Replace [color] and [duration] with the corresponding properties of the phase object
+
+        
