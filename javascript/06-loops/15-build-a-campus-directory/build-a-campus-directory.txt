@@ -1,0 +1,6 @@
+Build A Campus Directory Normalizer
+-----------------------------------
+- In this workshop
+    - You will work with a smart campus directory 
+        - Create lookup tables from nested data
+
