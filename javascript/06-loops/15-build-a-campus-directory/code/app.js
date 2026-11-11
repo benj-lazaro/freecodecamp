@@ -87,8 +87,15 @@ const rawData = {
 
 function getInstructorByEmail(email) {
   for (const dept in rawData) {
-    let programs = rawData[dept].programs;
-    console.log(programs);
+    const programs = rawData[dept].programs;
+
+    for (const program of programs) {
+      for (const instructor of program["instructors"]) {
+        if (instructor.email === email) {
+          return instructor.name;
+        }
+      }
+    }
   }
 
   return null;
