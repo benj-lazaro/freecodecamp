@@ -129,8 +129,19 @@ function normalizeDirectory(rawData) {
 
       programsById[program.id] = { ...program, departmentId };
       departmentsById[departmentId].programIds.push(program.id);
+
+      for (let k = 0; k < program.instructors.length; k++) {
+        const instructor = program.instructors[k];
+
+        instructorsById[instructor.id] = {
+          ...instructor,
+          programId: program.id,
+          departmentId,
+        };
+
+        console.log(instructorsById[instructor.id]);
+      }
     }
-    console.log(departmentsById[departmentId]);
   }
 }
 
