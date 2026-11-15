@@ -139,10 +139,26 @@ function normalizeDirectory(rawData) {
           departmentId,
         };
 
-        console.log(instructorsById[instructor.id]);
+        if (instructor.email) {
+          instructorsByEmail[instructor.email] = instructor.id;
+        }
       }
     }
   }
+
+  return { departmentsById, programsById, instructorsById, instructorsByEmail };
 }
 
-normalizeDirectory(rawData);
+const normalizedData = normalizeDirectory(rawData);
+
+function getInstructorByEmail(email, normalizedData) {
+  const instructorId = normalizedData.instructorsByEmail[email];
+
+  if (!instructorId) {
+    return "Instructor not found";
+  }
+
+  return null;
+}
+
+console.log(getInstructorByEmail("fatima@example.com", normalizedData));
