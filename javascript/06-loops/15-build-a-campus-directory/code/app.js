@@ -158,7 +158,17 @@ function getInstructorByEmail(email, normalizedData) {
     return "Instructor not found";
   }
 
-  return null;
+  const instructor = normalizedData.instructorsById[instructorId];
+  const department = normalizedData.departmentsById[instructor.departmentId];
+
+  return {
+    name: instructor.name ?? "Unknown Instructor",
+    officeHours: instructor.officeHours ?? "Not Available",
+    department: department.name ?? "Unknown Department",
+  };
 }
 
-console.log(getInstructorByEmail("fatima@example.com", normalizedData));
+function listRoomsByBuilding(buildingCode, normalizedData) {
+  const programValues = Object.values(normalizedData.programsById);
+  const rooms = [];
+}
