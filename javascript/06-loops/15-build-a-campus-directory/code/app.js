@@ -171,4 +171,18 @@ function getInstructorByEmail(email, normalizedData) {
 function listRoomsByBuilding(buildingCode, normalizedData) {
   const programValues = Object.values(normalizedData.programsById);
   const rooms = [];
+
+  for (let i = 0; i < programValues.length; i++) {
+    const program = programValues[i];
+    const department = normalizedData.departmentsById[program.departmentId];
+
+    if (department.code === buildingCode && program.room != null) {
+      rooms.push(program.room);
+    }
+  }
+
+  return rooms.sort();
 }
+
+console.log(listRoomsByBuilding("CSE", normalizedData));
+console.log(listRoomsByBuilding("BBA", normalizedData));
