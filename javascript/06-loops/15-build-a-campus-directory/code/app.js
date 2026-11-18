@@ -184,5 +184,10 @@ function listRoomsByBuilding(buildingCode, normalizedData) {
   return rooms.sort();
 }
 
-console.log(listRoomsByBuilding("CSE", normalizedData));
-console.log(listRoomsByBuilding("BBA", normalizedData));
+function renderDirectorySummary(normalizedData) {
+  const departments = Object.keys(normalizedData.departmentsById).length;
+  const programs = Object.keys(normalizedData.programsById).length;
+  const instructors = Object.keys(normalizedData.instructorsById).length;
+  const instructorValues = Object.values(normalizedData.instructorsById);
+  let missingOfficeHours = 0;
+}
