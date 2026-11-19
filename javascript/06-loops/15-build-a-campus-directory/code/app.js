@@ -190,4 +190,15 @@ function renderDirectorySummary(normalizedData) {
   const instructors = Object.keys(normalizedData.instructorsById).length;
   const instructorValues = Object.values(normalizedData.instructorsById);
   let missingOfficeHours = 0;
+
+  for (let i = 0; i < instructorValues.length; i++) {
+    if (instructorValues[i].officeHours == null) {
+      missingOfficeHours++;
+    }
+  }
+
+  const programValues = Object.values(normalizedData.programsById);
+  let programsWithoutRooms = 0;
+
+  for (let i = 0; i < programValues.length; i++) {}
 }
