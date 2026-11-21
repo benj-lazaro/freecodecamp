@@ -205,4 +205,16 @@ function renderDirectorySummary(normalizedData) {
       programsWithoutRooms++;
     }
   }
+
+  return `
+    Campus Directory Summary
+    ------------------------
+    Departments: ${departments}
+    Programs: ${programs}
+    Instructors: ${instructors}
+    Missing Office Hours: ${missingOfficeHours}
+    Programs Without Rooms: ${programsWithoutRooms}
+  `;
 }
+
+console.log(renderDirectorySummary(normalizedData));
