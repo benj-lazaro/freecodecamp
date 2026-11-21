@@ -1,0 +1,40 @@
+Implement The Data Sanitizer Sweep Process
+------------------------------------------
+- In this lab
+    - You will clean semi-structured log files 
+        - By replacing disallowed characters with #
+        - Tracking how many entries were processed
+
+
+- User Stories:
+    - You should use a function declaration to create a function named "sanitizeLog" 
+        - With two parameters: 
+            - "entry", a string representing a log entry, 
+            - "disallowedCharacters", an array of single-character strings representing the characters to replace
+
+    - The function should return a modified entry string w/ 
+        - Each disallowed character replaced with #
+        - Matching should be case-sensitive
+
+    - You should create a function named "cleanLogs" 
+        - With two parameters: 
+            - "logs", an array of strings representing log entries
+            - "disallowedCharacters", an array of single-character strings representing the characters to replace
+
+    - "cleanLogs" should iterate over the given array of log entries in order
+
+    - When "cleanLogs" reaches a log entry that contains the fatal marker $
+        - It should stop 
+        - Return "Sanitizing stopped. Failure Reason: Fatal character occurred."
+
+    - A log entry starting with the / character is an informational entry and 
+        - Should not be sanitized
+        - You should keep a count of informational entries
+
+    - All other log entries should be sanitized using the "sanitizeLog" function
+        - You should keep a count of sanitized entries
+
+    - If "cleanLogs" finishes without encountering a fatal marker
+        - It should return "Total Entry Count: X. Sanitized Entry Count: Y. Informational Entry Count: Z. Finished sanitizing logs."
+        - Where X is the total number of entries, Y is the number of sanitized entries, and Z is the number of informational entries
+        
